@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
+using PocketGauger.Dtos;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests.TestData
+namespace PocketGauger.UnitTests.TestData
 {
     public static class ExpectedGaugingSummaryData
     {

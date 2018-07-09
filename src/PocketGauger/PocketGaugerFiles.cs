@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Server.Plugins.FieldVisit.PocketGauger.Exceptions;
-using Server.Plugins.FieldVisit.PocketGauger.Helpers;
+using PocketGauger.Exceptions;
+using PocketGauger.Helpers;
 
-namespace Server.Plugins.FieldVisit.PocketGauger
+namespace PocketGauger
 {
     public class PocketGaugerFiles : Dictionary<string, Stream>, IDisposable
     {

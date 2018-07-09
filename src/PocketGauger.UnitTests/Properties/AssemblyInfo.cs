@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-[assembly: AssemblyTitle("Server.Plugins.FieldVisit.PocketGauger.UnitTests")]
+[assembly: AssemblyTitle("PocketGauger.UnitTests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyTrademark("")]

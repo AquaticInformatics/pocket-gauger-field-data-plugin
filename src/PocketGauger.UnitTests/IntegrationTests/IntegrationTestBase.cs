@@ -1,11 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
-using Common.TestHelpers.NUnitExtensions;
 using NUnit.Framework;
-using Server.Plugins.FieldVisit.PocketGauger.UnitTests.TestData;
+using PocketGauger.UnitTests.TestData;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests.IntegrationTests
+namespace PocketGauger.UnitTests.IntegrationTests
 {
     public abstract class IntegrationTestBase
     {

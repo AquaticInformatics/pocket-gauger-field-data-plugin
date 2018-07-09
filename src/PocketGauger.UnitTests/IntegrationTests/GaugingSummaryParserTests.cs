@@ -1,9 +1,9 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
-using Server.Plugins.FieldVisit.PocketGauger.Parsers;
-using Server.Plugins.FieldVisit.PocketGauger.UnitTests.TestData;
+using PocketGauger.Parsers;
+using PocketGauger.UnitTests.TestData;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests.IntegrationTests
+namespace PocketGauger.UnitTests.IntegrationTests
 {
     public class GaugingSummaryParserTests : IntegrationTestBase
     {

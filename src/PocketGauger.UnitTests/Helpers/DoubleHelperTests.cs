@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
-using Server.Plugins.FieldVisit.PocketGauger.Helpers;
+using PocketGauger.Helpers;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests.Helpers
+namespace PocketGauger.UnitTests.Helpers
 {
     [TestFixture]
     public class DoubleHelperTests

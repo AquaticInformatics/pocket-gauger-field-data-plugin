@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Exceptions
+namespace PocketGauger.Exceptions
 {
     [Serializable]
     public class PocketGaugerDataFormatException : Exception

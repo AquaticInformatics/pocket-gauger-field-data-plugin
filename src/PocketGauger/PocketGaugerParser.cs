@@ -4,12 +4,11 @@ using System.IO.Compression;
 using FieldDataPluginFramework;
 using FieldDataPluginFramework.Context;
 using FieldDataPluginFramework.Results;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
-using Server.Plugins.FieldVisit.PocketGauger.Parsers;
-using static System.FormattableString;
-using Server.Plugins.FieldVisit.PocketGauger.Exceptions;
+using PocketGauger.Dtos;
+using PocketGauger.Exceptions;
+using PocketGauger.Parsers;
 
-namespace Server.Plugins.FieldVisit.PocketGauger
+namespace PocketGauger
 {
     public class PocketGaugerParser : IFieldDataPlugin
     {
@@ -49,7 +48,7 @@ namespace Server.Plugins.FieldVisit.PocketGauger
                 if (!zipContents.ContainsKey(FileNames.GaugingSummary))
                 {
                     throw new PocketGaugerZipFileMissingRequiredContentException(
-                        Invariant($"Zip file does not contain file {FileNames.GaugingSummary}"));
+                        FormattableString.Invariant($"Zip file does not contain file {FileNames.GaugingSummary}"));
                 }
 
                 gaugingSummary = CreateGaugingSummaryAssembler().Assemble(zipContents);

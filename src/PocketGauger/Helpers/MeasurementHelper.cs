@@ -1,7 +1,7 @@
 ﻿using System;
 using FieldDataPluginFramework.DataModel;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Helpers
+namespace PocketGauger.Helpers
 {
     public static class MeasurementHelper
     {

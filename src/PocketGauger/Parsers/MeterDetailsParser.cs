@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
-using Server.Plugins.FieldVisit.PocketGauger.Interfaces;
+using PocketGauger.Dtos;
+using PocketGauger.Interfaces;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Parsers
+namespace PocketGauger.Parsers
 {
     public class MeterDetailsParser : IMeterDetailsParser
     {

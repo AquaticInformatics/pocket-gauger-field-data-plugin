@@ -1,4 +1,4 @@
-﻿namespace Server.Plugins.FieldVisit.PocketGauger.Dtos
+﻿namespace PocketGauger.Dtos
 {
     public enum BankSide
     {

@@ -3,11 +3,11 @@ using FieldDataPluginFramework;
 using FieldDataPluginFramework.DataModel;
 using FieldDataPluginFramework.DataModel.DischargeActivities;
 using FieldDataPluginFramework.Results;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
-using Server.Plugins.FieldVisit.PocketGauger.Exceptions;
-using Server.Plugins.FieldVisit.PocketGauger.Mappers;
+using PocketGauger.Dtos;
+using PocketGauger.Exceptions;
+using PocketGauger.Mappers;
 
-namespace Server.Plugins.FieldVisit.PocketGauger
+namespace PocketGauger
 {
     public class GaugingSummaryProcessor
     {

@@ -2,11 +2,11 @@
 using NSubstitute;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
-using Server.Plugins.FieldVisit.PocketGauger.Interfaces;
-using Server.Plugins.FieldVisit.PocketGauger.UnitTests.TestData;
+using PocketGauger.Dtos;
+using PocketGauger.Interfaces;
+using PocketGauger.UnitTests.TestData;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests
+namespace PocketGauger.UnitTests
 {
     public class GaugingSummaryAssemblerTests
     {

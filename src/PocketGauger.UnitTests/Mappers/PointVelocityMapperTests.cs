@@ -1,22 +1,23 @@
 ﻿// ReSharper disable PossibleInvalidOperationException
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using FieldDataPluginFramework.DataModel.ChannelMeasurements;
 using FieldDataPluginFramework.DataModel.DischargeActivities;
 using FieldDataPluginFramework.DataModel.Verticals;
-using FieldDataPluginFramework.UnitTests.TestHelpers;
 using FluentAssertions;
 using NSubstitute;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
-using Server.Plugins.FieldVisit.PocketGauger.Helpers;
-using Server.Plugins.FieldVisit.PocketGauger.Interfaces;
-using Server.Plugins.FieldVisit.PocketGauger.Mappers;
-using Server.Plugins.FieldVisit.PocketGauger.UnitTests.TestData;
+using PocketGauger.Dtos;
+using PocketGauger.Helpers;
+using PocketGauger.Interfaces;
+using PocketGauger.Mappers;
+using PocketGauger.UnitTests.TestData;
+using PocketGauger.UnitTests.TestHelpers;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests.Mappers
+namespace PocketGauger.UnitTests.Mappers
 {
     public class PointVelocityMapperTests
     {

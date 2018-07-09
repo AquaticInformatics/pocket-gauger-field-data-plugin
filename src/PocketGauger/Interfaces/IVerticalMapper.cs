@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using FieldDataPluginFramework.DataModel.ChannelMeasurements;
 using FieldDataPluginFramework.DataModel.Verticals;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
+using PocketGauger.Dtos;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Interfaces
+namespace PocketGauger.Interfaces
 {
     public interface IVerticalMapper
     {

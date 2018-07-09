@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Reflection;
 using Ploeh.AutoFixture.Kernel;
-using Server.Plugins.FieldVisit.PocketGauger.Helpers;
+using PocketGauger.Helpers;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests.TestData
+namespace PocketGauger.UnitTests.TestData
 {
     public class ProxyTypeSpecimenBuilder : ISpecimenBuilder
     {

@@ -1,7 +1,7 @@
-﻿using Server.Plugins.FieldVisit.PocketGauger.Dtos;
+﻿using PocketGauger.Dtos;
 using MeterCalibration = FieldDataPluginFramework.DataModel.Meters.MeterCalibration;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Interfaces
+namespace PocketGauger.Interfaces
 {
     public interface IMeterCalibrationMapper
     {

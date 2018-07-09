@@ -1,7 +1,7 @@
 ﻿using System.Xml.Serialization;
-using Server.Plugins.FieldVisit.PocketGauger.Helpers;
+using PocketGauger.Helpers;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Dtos
+namespace PocketGauger.Dtos
 {
     [XmlType]
     public class MeterCalibrationItem

@@ -1,6 +1,6 @@
-﻿using Server.Plugins.FieldVisit.PocketGauger.Exceptions;
+﻿using PocketGauger.Exceptions;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Helpers
+namespace PocketGauger.Helpers
 {
     public static class BooleanHelper
     {

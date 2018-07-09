@@ -1,6 +1,6 @@
 ﻿using FieldDataPluginFramework.Units;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Helpers
+namespace PocketGauger.Helpers
 {
     public static class ParametersAndMethodsHelper
     {

@@ -6,9 +6,9 @@ using FieldDataPluginFramework.DataModel.DischargeActivities;
 using NSubstitute;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
+using PocketGauger.Dtos;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests
+namespace PocketGauger.UnitTests
 {
     [TestFixture]
     public class GaugingSummaryProcessorTests : PocketGaugerTestsBase

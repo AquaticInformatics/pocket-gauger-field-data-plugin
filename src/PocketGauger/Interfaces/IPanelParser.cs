@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
+using PocketGauger.Dtos;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Interfaces
+namespace PocketGauger.Interfaces
 {
     public interface IPanelParser
     {

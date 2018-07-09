@@ -3,10 +3,10 @@ using System.IO;
 using NSubstitute;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
-using Server.Plugins.FieldVisit.PocketGauger.Exceptions;
+using PocketGauger.Dtos;
+using PocketGauger.Exceptions;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests
+namespace PocketGauger.UnitTests
 {
     [TestFixture]
     public class PocketGaugerFilesTests

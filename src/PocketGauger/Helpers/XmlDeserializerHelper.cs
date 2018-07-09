@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Xml.Serialization;
-using Server.Plugins.FieldVisit.PocketGauger.Exceptions;
+using PocketGauger.Exceptions;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Helpers
+namespace PocketGauger.Helpers
 {
     public static class XmlDeserializerHelper
     {

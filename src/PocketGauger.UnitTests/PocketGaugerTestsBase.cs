@@ -4,10 +4,9 @@ using FieldDataPluginFramework.Results;
 using NSubstitute;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
-using Server.BusinessObjects.FieldDataPlugin.UnitTests;
-using Server.TestHelpers.FieldVisitTestHelpers.TestHelpers;
+using PocketGauger.UnitTests.TestHelpers;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests
+namespace PocketGauger.UnitTests
 {
     public abstract class PocketGaugerTestsBase
     {

@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using System.Linq;
 using System.Reflection;
-using Common.TestHelpers.NUnitExtensions;
 using FieldDataPluginFramework.Context;
 using FieldDataPluginFramework.DataModel;
 using FieldDataPluginFramework.DataModel.DischargeActivities;
@@ -13,7 +12,7 @@ using NSubstitute;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests
+namespace PocketGauger.UnitTests
 {
     [TestFixture]
     public class PocketGaugerParserTests : PocketGaugerTestsBase
@@ -26,7 +25,7 @@ namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests
         {
             _pocketGaugerParser = new PocketGaugerParser();
 
-            const string testPath = @"Server.Plugins.FieldVisit.PocketGauger.UnitTests.TestData.PGData.zip";
+            const string testPath = @"PocketGauger.UnitTests.TestData.PGData.zip";
             _stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(testPath);
         }
 

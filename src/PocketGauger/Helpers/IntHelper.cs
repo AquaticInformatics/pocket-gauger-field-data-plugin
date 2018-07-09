@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Helpers
+namespace PocketGauger.Helpers
 {
     public static class IntHelper
     {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using FieldDataPluginFramework.DataModel.ChannelMeasurements;
 using FieldDataPluginFramework.DataModel.Verticals;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
-using Server.Plugins.FieldVisit.PocketGauger.Interfaces;
+using PocketGauger.Dtos;
+using PocketGauger.Interfaces;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Mappers
+namespace PocketGauger.Mappers
 {
     public class VerticalMapper : IVerticalMapper
     {

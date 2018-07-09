@@ -2,10 +2,10 @@
 using System.Linq;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
-using Server.Plugins.FieldVisit.PocketGauger.Helpers;
+using PocketGauger.Dtos;
+using PocketGauger.Helpers;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.UnitTests.Helpers
+namespace PocketGauger.UnitTests.Helpers
 {
     [TestFixture]
     public class EnumHelperTests

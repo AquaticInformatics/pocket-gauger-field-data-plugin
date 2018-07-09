@@ -4,11 +4,11 @@ using System.Globalization;
 using FieldDataPluginFramework.DataModel;
 using FieldDataPluginFramework.DataModel.ChannelMeasurements;
 using FieldDataPluginFramework.DataModel.DischargeActivities;
-using Server.Plugins.FieldVisit.PocketGauger.Dtos;
-using Server.Plugins.FieldVisit.PocketGauger.Helpers;
-using Server.Plugins.FieldVisit.PocketGauger.Interfaces;
+using PocketGauger.Dtos;
+using PocketGauger.Helpers;
+using PocketGauger.Interfaces;
 
-namespace Server.Plugins.FieldVisit.PocketGauger.Mappers
+namespace PocketGauger.Mappers
 {
     public class DischargeActivityMapper : IDischargeActivityMapper
     {
