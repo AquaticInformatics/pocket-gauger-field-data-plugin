@@ -79,7 +79,7 @@ namespace PocketGauger
             var streams = new PocketGaugerFiles();
             foreach (var zipArchiveEntry in zipArchive.Entries)
             {
-                streams.Add(zipArchiveEntry.Name.ToLower(), zipArchiveEntry.Open());
+                streams[zipArchiveEntry.Name.ToLower()] = zipArchiveEntry.Open();
             }
 
             return streams;
