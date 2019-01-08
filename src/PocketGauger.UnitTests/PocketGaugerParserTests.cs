@@ -25,8 +25,12 @@ namespace PocketGauger.UnitTests
         {
             _pocketGaugerParser = new PocketGaugerParser();
 
-            const string testPath = @"PocketGauger.UnitTests.TestData.PGData.zip";
-            _stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(testPath);
+            SetupStreamToLoadEmbeddedResource("PGData.zip");
+        }
+
+        private void SetupStreamToLoadEmbeddedResource(string path)
+        {
+            _stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"PocketGauger.UnitTests.TestData.{path}");
         }
 
         [TearDown]
@@ -42,7 +46,14 @@ namespace PocketGauger.UnitTests
             _stream = new MemoryStream(Fixture.Create<byte[]>());
 
             var parseFileResult = _pocketGaugerParser.ParseFile(_stream, FieldDataResultsAppender, Logger);
+
+            AssertResultAllowsOtherPluginsToContinueProcessing(parseFileResult);
+        }
+
+        private static void AssertResultAllowsOtherPluginsToContinueProcessing(ParseFileResult parseFileResult)
+        {
             parseFileResult.Status.Should().Be(ParseFileStatus.CannotParse);
+            parseFileResult.ErrorMessage.Should().BeNullOrEmpty();
         }
 
         [Test]
@@ -51,7 +62,8 @@ namespace PocketGauger.UnitTests
             _stream = CreateZipStream(Fixture.Create<string>());
 
             var parseFileResult = _pocketGaugerParser.ParseFile(_stream, FieldDataResultsAppender, Logger);
-            parseFileResult.Status.Should().Be(ParseFileStatus.CannotParse);
+
+            AssertResultAllowsOtherPluginsToContinueProcessing(parseFileResult);
         }
 
         private Stream CreateZipStream(string zipEntryName)
@@ -94,6 +106,16 @@ namespace PocketGauger.UnitTests
             FieldDataResultsAppender
                 .Received(expectedNumberOfDischargeActivities)
                 .AddDischargeActivity(Arg.Any<FieldVisitInfo>(), Arg.Any<DischargeActivity>());
+        }
+
+        [Test]
+        public void ParseFile_DuplicateNestedFilename_ReturnsCannotParseWithoutErrorMessage()
+        {
+            SetupStreamToLoadEmbeddedResource("DuplicateNestedFilenames.zip");
+
+            var parseFileResult = _pocketGaugerParser.ParseFile(_stream, FieldDataResultsAppender, Logger);
+
+            AssertResultAllowsOtherPluginsToContinueProcessing(parseFileResult);
         }
     }
 }
