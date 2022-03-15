@@ -32,7 +32,6 @@ build:
 artifacts:
   - path: src\PocketGauger\deploy\Release\PocketGauger.plugin
     name: ThePlugin
-    type: file
 
 deploy:
   - provider: GitHub
